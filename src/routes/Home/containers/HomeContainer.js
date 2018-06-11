@@ -1,13 +1,34 @@
 import { connect } from 'react-redux';
 import Home from '../components/Home';
-import {getCurrentLocation} from '../modules/home';
+import {
+    getCurrentLocation,
+    getInputData,
+    toggleSearchResultModal,
+    getAddressPredictions,
+    getSelectedAddress,
+    bookCar,
+    getNearByTransporters
+} from "../module/home";
 
 const mapStateToProps = (state) => ({
-    region: state.home.region
+    region: state.home.region,
+    inputData:state.home.inputData || {},
+    resultTypes:state.home.resultTypes || {},
+    predictions:state.home.predictions ||  [],
+    selectedAddress:state.home.selectedAddress || {},
+    fare:state.home.fare,
+    booking:state.home.booking || {},
+    nearByTransporters:state.home.nearByTransporters || []
 })
 
 const mapActionCreators = {
-    getCurrentLocation
+    getCurrentLocation,
+    getInputData,
+    toggleSearchResultModal,
+    getAddressPredictions,
+    getSelectedAddress,
+    bookCar,
+    getNearByTransporters
 };
 
 export default connect(mapStateToProps, mapActionCreators)(Home);

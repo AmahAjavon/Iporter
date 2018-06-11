@@ -4,7 +4,7 @@ var width = Dimensions.get('window').width;
 
 const styles = {
     searchBox: {
-        top:70,
+        top:0,
         position: 'absolute',
         width: width,
     },
@@ -14,7 +14,7 @@ const styles = {
         marginTop:10,
         marginBottom:0,
         backgroundColor:'#fff',
-        opacity:0.3,
+        opacity:0.9,
         borderRadius:7
     },
     secondInputWrapper:{
@@ -23,7 +23,7 @@ const styles = {
         marginTop:10,
         marginBottom:0,
         backgroundColor:'#fff',
-        opacity:0.3,
+        opacity:0.9,
         borderRadius:7
     },
     inputSearch:{
