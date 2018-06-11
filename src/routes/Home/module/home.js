@@ -67,6 +67,7 @@ export function getAddressPredictions(){
         let userInput = store().home.resultTypes.pickUp ? store().home.inputData.pickUp : store().home.inputData.dropOff;
         RNGooglePlaces.getAutocompletePredictions(userInput,
             {
+                type: 'address',
                 country:"US"
             }
         )
@@ -186,7 +187,7 @@ export function bookCar(){
 
 export function getNearByTransporters(){
     return(dispatch, store)=>{
-        request.get("http://localhost:3000/api/transportersLocation")
+        request.get("http://localhost:3000/api/transporterLocation")
             .query({
                 latitude: 37.785834,
                 longitude:-122.406417

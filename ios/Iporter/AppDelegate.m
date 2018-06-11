@@ -17,12 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-[GMSPlacesClient provideAPIKey:@"AIzaSyDUYbTR-3PDWPhgxjENs4yf35g2eHc641s"];
-[GMSServices provideAPIKey:@"AIzaSyDUYbTR-3PDWPhgxjENs4yf35g2eHc641s"];
 
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+
+  [GMSPlacesClient provideAPIKey:@"AIzaSyAG2uiyjsUWKou1w2HW7NQ-pv8OhekUAyE"];
+  [GMSServices provideAPIKey:@"AIzaSyDUYbTR-3PDWPhgxjENs4yf35g2eHc641s"];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"Iporter"

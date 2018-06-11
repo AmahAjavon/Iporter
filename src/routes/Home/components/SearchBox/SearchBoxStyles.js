@@ -9,7 +9,7 @@ const styles = {
         width: width,
     },
     inputWrapper:{
-        marginLeft:10,
+        marginLeft:15,
         marginRight: 10,
         marginTop:10,
         marginBottom:0,
@@ -18,7 +18,7 @@ const styles = {
         borderRadius:7
     },
     secondInputWrapper:{
-        marginLeft:10,
+        marginLeft:15,
         marginRight: 10,
         marginTop:10,
         marginBottom:0,
