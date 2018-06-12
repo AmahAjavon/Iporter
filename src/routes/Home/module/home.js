@@ -67,7 +67,6 @@ export function getAddressPredictions(){
         let userInput = store().home.resultTypes.pickUp ? store().home.inputData.pickUp : store().home.inputData.dropOff;
         RNGooglePlaces.getAutocompletePredictions(userInput,
             {
-                type: 'address',
                 country:"US"
             }
         )
@@ -106,7 +105,7 @@ export function getSelectedAddress(payload){
                             origins:store().home.selectedAddress.selectedPickUp.latitude + "," + store().home.selectedAddress.selectedPickUp.longitude,
                             destinations:store().home.selectedAddress.selectedDropOff.latitude + "," + store().home.selectedAddress.selectedDropOff.longitude,
                             mode:"driving",
-                            key:"AIzaSyDUYbTR-3PDWPhgxjENs4yf35g2eHc641s"
+                            key:process.env.GOOGLE_MAPS_API_KEYS
                         })
                         .finish((error, res)=>{
                             dispatch({
@@ -189,8 +188,8 @@ export function getNearByTransporters(){
     return(dispatch, store)=>{
         request.get("http://localhost:3000/api/transporterLocation")
             .query({
-                latitude: 37.785834,
-                longitude:-122.406417
+                latitude: 32.7157,
+                longitude: -117.1611,
             })
             .finish((error, res)=>{
                 if(res){

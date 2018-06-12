@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 var mongojs = require("mongojs");
 
-var db = mongojs("mongodb://amah:secret1@ds149960.mlab.com:49960/iporter", ["transportersLocation"]);
+var db = mongojs(process.env.MONGO_DB_URL, ["transportersLocation"]);
 
 
 //upadate transporter socket id

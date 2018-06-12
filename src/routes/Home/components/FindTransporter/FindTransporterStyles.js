@@ -3,7 +3,7 @@ const { width } = Dimensions.get("window");
 const styles = {
     findTransporterContainer:{
         flex:1,
-        backgroundColor:"#FF5E3A",
+        backgroundColor:"#8a2be2",
         justifyContent: "center",
         alignItems: "center"
     },

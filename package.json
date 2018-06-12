@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "dotenv": "^6.0.0",
     "native-base": "2.5.1",
     "react": "16.4.0",
     "react-addons-update": "^15.5.2",

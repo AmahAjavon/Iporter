@@ -19,7 +19,7 @@ export const TransporterFooterProfile = ({ transporterInfo, getTransporterLocati
 					disabled={true}
 					maxStars={5}
 					rating={rating}
-					starColor="#FF5E3A"
+					starColor="#8a2be2"
 				/>
 			</View>
 			<View  style={styles.iconContainer}/>

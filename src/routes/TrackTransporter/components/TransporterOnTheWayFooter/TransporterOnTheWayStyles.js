@@ -18,7 +18,7 @@ const styles = {
     },
     distanceText:{
         marginTop:5,
-        color:"#FF5E3A",
+        color:"#8a2be2",
         fontWeight:"bold",
         fontSize:16
     },

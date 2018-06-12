@@ -40,7 +40,7 @@ const styles = {
         }
     },
     quotationMarkLeft:{
-        color:"#FF5E3A",
+        color:"#8a2be2",
         fontSize:32,
         textAlign: "left",
         fontWeight: "bold",
@@ -49,7 +49,7 @@ const styles = {
         fontFamily: "Cochin"
     },
     quotationMarkRight:{
-        color:"#FF5E3A",
+        color:"#8a2be2",
         fontSize:32,
         textAlign: "right",
         fontWeight: "bold",
@@ -76,7 +76,7 @@ const styles = {
 
     },
     nameText:{
-        color:"#FF5E3A",
+        color:"#8a2be2",
         fontSize:32,
         textAlign:"center"
     },

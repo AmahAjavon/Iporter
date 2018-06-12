@@ -85,7 +85,7 @@ export function getDistanceFromTransporter(){
 				destinations:store().trackTransporter.transporterLocation.coordinate.coordinates[1] +
 				"," + store().trackTransporter.transporterLocation.coordinate.coordinates[0],
 				mode:"transporting",
-				key:"AIzaSyDUYbTR-3PDWPhgxjENs4yf35g2eHc641s"
+				key:process.env.GOOGLE_MAPS_API_KEYS
 			})
 			.finish((error, res)=>{
 				dispatch({

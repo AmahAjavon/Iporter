@@ -17,13 +17,13 @@ const styles = {
             height: 1,
             width: 0
         },
-        backgroundColor:"#FF5E3A"
+        backgroundColor:"#8a2be2"
     },
     disabledState:{       
         backgroundColor: "#D7D7D7",
     },
     activeState: {
-        backgroundColor:"#FF5E3A",
+        backgroundColor:"#8a2be2",
     },
     btnText: {
         fontSize: 16,

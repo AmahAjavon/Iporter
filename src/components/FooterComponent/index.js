@@ -36,8 +36,8 @@ export const FooterComponent =  ({logo})=>{
 					tabs.map((obj, index)=>{
 						return (
 							<Button key={index}>
-								<Icon size={20} name={obj.icon} color={(index === 0) ? "#FF5E3A" : "grey"} />
-								<Text style={{fontSize:12, color:(index === 0) ? "#FF5E3A" : "grey"}}>{obj.title}</Text>
+								<Icon size={20} name={obj.icon} color={(index === 0) ? "#8a2be2" : "grey"} />
+								<Text style={{fontSize:12, color:(index === 0) ? "#8a2be2" : "grey"}}>{obj.title}</Text>
 								<Text style={styles.subText}>{obj.subTitle}</Text>
 							</Button>
 

@@ -96,43 +96,43 @@
 
         socket.on("trackTransporter", function(location){
             var transporterMovement = [{
-                    lat:37.113667,
-                    long:-122.687565
+                    lat:32.113667,
+                    long:-117.687565
                 },
                 {
-                    lat: 37.785834,
-                    long:-122.406417
+                    lat: 32.785834,
+                    long:-117.406417
 
                 },
                 {
-                    lat:37.127270,
-                    long:-122.688423
+                    lat:32.127270,
+                    long:-117.688423
 
                 },
                 {
-                    lat:37.137383,
-                    long:-122.695118
+                    lat:32.137383,
+                    long:-117.695118
                 },
                 {
-                    lat:37.137383,
-                    long:-122.695118
+                    lat:32.137383,
+                    long:-117.695118
                 },
                 {
-                    lat:37.152857,
-                    long:-122.703529
+                    lat:32.152857,
+                    long:-117.703529
                 },
                 {
-                    lat:37.146642,
-                    long:-122.695845
+                    lat:32.146642,
+                    long:-117.695845
                 },
                 {
-                    lat:37.1591601,
-                    long:-122.7136599
+                    lat:32.1591601,
+                    long:-117.7136599
             }];
             var index = 0;
             var interval = setInterval(function(){
                 var movementObj = transporterMovement[index++];
-                if (index == transporterMovement.length){
+                if (index === transporterMovement.length){
                     clearInterval(interval);
                     console.log(index)
 
