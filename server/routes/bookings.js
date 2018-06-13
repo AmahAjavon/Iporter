@@ -1,8 +1,9 @@
 var express = require("express");
 var router = express.Router();
 var mongojs = require("mongojs");
+require('dotenv').config()
 
-var db = mongojs(process.env.MONGO_DB_URL, ["bookings"]);
+var db = mongojs(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@ds149960.mlab.com:49960/iporter`, ["bookings"]);
 
 router.get("/bookings", function(req, res, next){
 	db.bookings.find(function(err, bookings){
