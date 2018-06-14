@@ -40,7 +40,7 @@
 
         var transporterCurrentData = {
             "socketId":socket.id,
-            "locationId":"593a66b6734d1d141ca655e1"
+            "locationId":"5b22bd4bfb6fc033f884cf4d"
         };
 
         $.ajax({
@@ -71,7 +71,7 @@
                  
                     var status = $("#bookingStatus").val();
                     var dataToSend = {
-                        "transporterId":"5b1e17cefb6fc033f8813c4c",
+                        "transporterId":"5b22b8eafb6fc033f884cc96",
                         "id": passengerData._id,
                         "status": status,
                     };
@@ -96,38 +96,38 @@
 
         socket.on("trackTransporter", function(location){
             var transporterMovement = [{
-                    lat:32.113667,
-                    long:-117.687565
+                    lat:32.112667,
+                    long:-116.397565
                 },
                 {
-                    lat: 32.785834,
-                    long:-117.406417
+                    lat: 32.115834,
+                    long:-116.406417
 
                 },
                 {
                     lat:32.127270,
-                    long:-117.688423
+                    long:-116.438423
 
                 },
                 {
-                    lat:32.137383,
-                    long:-117.695118
+                    lat:32.137183,
+                    long:-116.455118
                 },
                 {
                     lat:32.137383,
-                    long:-117.695118
+                    long:-116.515118
                 },
                 {
-                    lat:32.152857,
-                    long:-117.703529
+                    lat:32.142857,
+                    long:-116.533529
                 },
                 {
                     lat:32.146642,
-                    long:-117.695845
+                    long:-116.585845
                 },
                 {
                     lat:32.1591601,
-                    long:-117.7136599
+                    long:-116.6136599
             }];
             var index = 0;
             var interval = setInterval(function(){

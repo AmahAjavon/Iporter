@@ -40,7 +40,7 @@ router.post("/bookings", function(req, res, next){
 	}
 });
 
-// Transporter  Update Booking done on transporter side
+// Transporter Update Booking done on transporter side
 router.put("/bookings/:id", function(req, res, next){
     var io = req.app.io;
     var booking = req.body;

@@ -151,13 +151,13 @@ export function bookCar(){
                     address:store().home.selectedAddress.selectedPickUp.address,
                     name:store().home.selectedAddress.selectedPickUp.name,
                     latitude:store().home.selectedAddress.selectedPickUp.latitude,
-                    longitude:store().home.selectedAddress.selectedPickUp.latitude
+                    longitude:store().home.selectedAddress.selectedPickUp.longitude
                 },
                 dropOff:{
                     address:store().home.selectedAddress.selectedDropOff.address,
                     name:store().home.selectedAddress.selectedDropOff.name,
                     latitude:store().home.selectedAddress.selectedDropOff.latitude,
-                    longitude:store().home.selectedAddress.selectedDropOff.latitude
+                    longitude:store().home.selectedAddress.selectedDropOff.longitude
                 },
                 fare:store().home.fare,
                 status:"pending"
@@ -188,8 +188,8 @@ export function getNearByTransporters(){
     return(dispatch, store)=>{
         request.get("http://localhost:3000/api/transporterLocation")
             .query({
-                latitude: 32.7157,
-                longitude: -117.1611,
+                latitude: 32.6270,
+                longitude: -116.9620,
             })
             .finish((error, res)=>{
                 if(res){
